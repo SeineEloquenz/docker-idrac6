@@ -49,5 +49,5 @@ jobs:
           push: true
           platforms: linux/${{ matrix.architecture }}
           tags: |
-            ghcr.io/seineeloquenz/docker-idrac:latest
-            ghcr.io/seineeloquenz/docker-idrac:${{ github.ref_name }}
+            ghcr.io/seineeloquenz/docker-idrac-${{ matrix.architecture }}:latest
+            ghcr.io/seineeloquenz/docker-idrac-${{ matrix.architecture }}:${{github.ref_name }}
